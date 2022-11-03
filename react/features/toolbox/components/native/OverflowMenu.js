@@ -24,6 +24,7 @@ import AudioOnlyButton from './AudioOnlyButton';
 import LinkToSalesforceButton from './LinkToSalesforceButton';
 import OpenCarmodeButton from './OpenCarmodeButton';
 import RaiseHandButton from './RaiseHandButton';
+import AutoPinButton from './AutoPinButton';
 import ScreenSharingButton from './ScreenSharingButton';
 
 /**
@@ -127,6 +128,7 @@ class OverflowMenu extends PureComponent<Props, State> {
                 <OpenCarmodeButton { ...topButtonProps } />
                 <AudioOnlyButton { ...buttonProps } />
                 {!_reactionsEnabled && !toolbarButtons.has('raisehand') && <RaiseHandButton { ...buttonProps } />}
+                <AutoPinButton { ...buttonProps } />
                 <Divider style = { styles.divider } />
                 <SecurityDialogButton { ...buttonProps } />
                 <RecordButton { ...buttonProps } />

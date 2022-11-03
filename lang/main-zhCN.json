@@ -441,7 +441,7 @@
         "answer": "接听",
         "audioCallTitle": "来电",
         "decline": "拒听",
-        "productLabel": "来自 Jitsi Meet",
+        "productLabel": "来自 Turkgram",
         "videoCallTitle": "视频通话"
     },
     "info": {
@@ -689,7 +689,7 @@
         "noiseSuppressionFailedTitle": "无法开启噪音抑制",
         "noiseSuppressionNoTrackDescription": "请先解除麦克风的静音。",
         "noiseSuppressionStereoDescription": "暂不支持对立体声音频开启噪音抑制。",
-        "oldElectronClientDescription1": "你似乎正在使用存在已知安全漏洞的旧版Jitsi Meet客户端，请尽快更新到最新版本!",
+        "oldElectronClientDescription1": "你似乎正在使用存在已知安全漏洞的旧版Turkgram客户端，请尽快更新到最新版本!",
         "oldElectronClientDescription2": "",
         "oldElectronClientDescription3": "",
         "participantWantsToJoin": "想加入会议",
@@ -1332,7 +1332,7 @@
         "go": "开始",
         "goSmall": "开始",
         "headerSubtitle": "安全且高品质的会议",
-        "headerTitle": "Jitsi Meet",
+        "headerTitle": "Turkgram",
         "info": "信息",
         "jitsiOnMobile": "手机版Jitsi – 下载我们的APP，随时随地都能开始会议",
         "join": "创建/加入",
@@ -1340,7 +1340,7 @@
             "calendar": "日历logo",
             "desktopPreviewThumbnail": "桌面预览缩略图",
             "googleLogo": "谷歌logo",
-            "logoDeepLinking": "Jitsi meet logo",
+            "logoDeepLinking": "Turkgram logo",
             "microsoftLogo": "微软logo",
             "policyLogo": "政策logo"
         },

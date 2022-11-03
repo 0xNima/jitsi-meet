@@ -41,6 +41,7 @@ export default class HangupButton extends Component<Props, *> {
      */
     _onClick() {
         api.executeCommand('hangup');
+	window.close(); //@added-by-me
     }
 
     /**

@@ -19,6 +19,7 @@ import { SoundCollection } from '../../sounds';
 import { createDeferred } from '../../util';
 import { appWillMount, appWillUnmount } from '../actions';
 import logger from '../logger';
+import { updateFlags } from '../../flags'; //@added-by-me
 
 declare var APP: Object;
 
@@ -98,6 +99,7 @@ export default class BaseApp extends Component<*, State> {
         }
 
         this.state.store.dispatch(appWillMount(this));
+	this.state.store.dispatch(updateFlags({"sdk": "turkgram"})); //@added-by-me
 
         this._init.resolve();
     }

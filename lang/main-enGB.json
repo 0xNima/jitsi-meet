@@ -308,7 +308,7 @@
         "answer": "Answer",
         "audioCallTitle": "Incoming call",
         "decline": "Dismiss",
-        "productLabel": "from Jitsi Meet",
+        "productLabel": "from Turkgram",
         "videoCallTitle": "Incoming video call"
     },
     "info": {
@@ -748,7 +748,7 @@
         "enterRoomTitle": "Start a new meeting",
         "go": "GO",
         "info": "Info",
-        "join": "JOIN",
+        "join": "Create Meeting",
         "privacy": "Privacy",
         "recentList": "Recent",
         "recentListDelete": "Delete",

@@ -359,7 +359,7 @@
         "answer": "Erantzun",
         "audioCallTitle": "Sarrerako deia",
         "decline": "Baztertu",
-        "productLabel": "Jitsi Meet-etik",
+        "productLabel": "Turkgram-etik",
         "videoCallTitle": "Bideo-deia sartzen"
     },
     "info": {
@@ -554,7 +554,7 @@
         "newDeviceAction": "Erabilera",
         "newDeviceAudioTitle": "Audio-gailu berria hauteman da",
         "newDeviceCameraTitle": "Kamera berria hauteman da",
-        "oldElectronClientDescription1": "Segurtasun arazoak dituen Jitsi Meet aplikazioa erabiltzen arai zara. Eguneratu ezazu",
+        "oldElectronClientDescription1": "Segurtasun arazoak dituen Turkgram aplikazioa erabiltzen arai zara. Eguneratu ezazu",
         "oldElectronClientDescription2": "bertsio berriagora",
         "oldElectronClientDescription3": "ORAIN!",
         "passwordRemovedRemotely": "$t(lockRoomPasswordUppercase) beste erabiltzaile batek kendu du",
@@ -1004,7 +1004,7 @@
         "go": "JOAN",
         "goSmall": "JOAN",
         "headerSubtitle": "Secure and high quality meetings",
-        "headerTitle": "Jitsi Meet",
+        "headerTitle": "Turkgram",
         "info": "Informazioa",
         "jitsiOnMobile": "Jitsi eramangarrian – deskargatu gure aplikazioak eta hasi bilerak edonondik",
         "join": "SORTU / SARTU",
@@ -1012,7 +1012,7 @@
             "calendar": "Egutegiaren logoa",
             "desktopPreviewThumbnail": "Aurrebistaren iruditxoa",
             "googleLogo": "Googleren logoa",
-            "logoDeepLinking": "Jitsi meeten logo",
+            "logoDeepLinking": "Turkgramen logo",
             "microsoftLogo": "Microsoften logo",
             "policyLogo": "Politikaren logoa"
         },

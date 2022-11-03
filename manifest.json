@@ -1,14 +1,14 @@
 {
-  "android_package_name": "org.jitsi.meet",
+  "android_package_name": "tr.turkgram.messenger",
   "prefer_related_applications": true,
   "related_applications": [
     {
-      "id": "org.jitsi.meet",
+      "id": "tr.turkgram.messenger",
       "platform": "chromeos_play"
     }
   ],
-  "short_name": "Jitsi Meet",
-  "name": "Jitsi Meet",
+  "short_name": "Turkgram",
+  "name": "Turkgram",
   "icons": [
     {
       "src": "static/pwa/icons/icon192.png",
