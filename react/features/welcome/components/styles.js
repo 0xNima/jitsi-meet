@@ -41,11 +41,12 @@ export default {
      * Join button style.
      */
     button: {
-        backgroundColor: BaseTheme.palette.screen01Header,
-        borderColor: BaseTheme.palette.screen01Header,
+        backgroundColor: '#FF0000', // @added-by-me
+        // borderColor: '#FF0000', // @added-by-me
         borderRadius: 4,
-        borderWidth: 1,
-        height: 30,
+        // borderWidth: 1,
+        height: 50,
+        width: '95%',
         justifyContent: 'center',
         paddingHorizontal: 20
     },
@@ -225,5 +226,16 @@ export default {
         flex: 1,
         opacity: 0.8,
         overflow: 'hidden'
+    },
+
+    /**
+     * @added-by-me
+     */
+    joinButtonContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
+        height: 200,
+        marginBottom: 10
     }
 };

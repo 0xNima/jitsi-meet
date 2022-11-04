@@ -253,11 +253,7 @@ public class JitsiMeetActivity extends AppCompatActivity
         finish();
     }
 
-    protected void onStorageChange(Map<String, Object> data) {
-        JitsiMeetLogger.i("storage changes: " + data);
-    }
-
-    protected void onInvite(Map<String, Object> data) {
+    protected void onInvite(HashMap<String, Object> data) { // @added-by-me
         JitsiMeetLogger.i("invite: " + data);
     }
 
@@ -343,11 +339,9 @@ public class JitsiMeetActivity extends AppCompatActivity
                 case READY_TO_CLOSE:
                     onReadyToClose();
                     break;
-                case STORAGE_CHANGED:
-                    onStorageChange(event.getData());
+                case INVITE:
+                    onInvite(event.getData());
                     break;
-		case INVITE:
-		    onInvite(event.getData());
             }
         }
     }

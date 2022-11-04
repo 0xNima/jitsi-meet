@@ -84,9 +84,6 @@ const SCREEN_SHARE_TOGGLED = 'SCREEN_SHARE_TOGGLED';
 const PARTICIPANTS_INFO_RETRIEVED = 'PARTICIPANTS_INFO_RETRIEVED';
 
 
-const STORAGE_CHANGE = 'STORAGE_CHANGE';
-
-
 const INVITE = 'INVITE'; 
 
 
@@ -238,9 +235,6 @@ MiddlewareRegistry.register(store => next => action => {
             /* data */ {
                 muted: action.muted
             });
-        break;
-    case STORAGE_CHANGE: // @added-by-me
-        sendEvent(store, STORAGE_CHANGE, action.data);
         break;
     case INVITE: // @added-by-me
         sendEvent(store, INVITE, action.data);

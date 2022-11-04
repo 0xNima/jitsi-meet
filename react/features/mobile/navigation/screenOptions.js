@@ -49,7 +49,7 @@ export const navigationContainerTheme = {
 export const welcomeScreenOptions = {
     ...TransitionPresets.ModalTransition,
     gestureEnabled: false,
-    headerShown: true,
+    headerShown: false, // @added-by-me
     headerStyle: {
         backgroundColor: BaseTheme.palette.screen01Header
     },
