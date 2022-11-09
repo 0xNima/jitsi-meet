@@ -3,7 +3,7 @@
 import { type Dispatch } from 'redux';
 
 import { translate } from '../../../base/i18n';
-import { IconRaisedHand } from '../../../base/icons';
+import { IconAutoSelect } from '../../../base/icons';
 import {
     pinParticipant
 } from '../../../base/participants';
@@ -24,7 +24,7 @@ type Props = AbstractButtonProps & {
  */
 class AutoPinButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'Auto Select';
-    icon = IconRaisedHand;
+    icon = IconAutoSelect;
     label = 'Auto Select';
     toggledLabel = 'Auto Select';
  

@@ -1,7 +1,7 @@
 // @flow
 
 import { translate } from '../../../base/i18n';
-import { IconAudioOnlyOff } from '../../../base/icons';
+import { IconAudioOnly, IconAudioOnlyOff } from '../../../base/icons';
 import { connect } from '../../../base/redux';
 import { updateSettings } from '../../../base/settings';
 import { AbstractButton, type AbstractButtonProps } from '../../../base/toolbox/components';
@@ -28,6 +28,7 @@ type Props = AbstractButtonProps & {
 class ToggleSelfViewButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.selfView';
     icon = IconAudioOnlyOff;
+    toggledIcon = IconAudioOnly;
     label = 'videothumbnail.hideSelfView';
     toggledLabel = 'videothumbnail.showSelfView';
 
@@ -40,7 +41,7 @@ class ToggleSelfViewButton extends AbstractButton<Props, *> {
      */
     _handleClick() {
         const { _disableSelfView, dispatch } = this.props;
-
+  
         dispatch(updateSettings({
             disableSelfView: !_disableSelfView
         }));
