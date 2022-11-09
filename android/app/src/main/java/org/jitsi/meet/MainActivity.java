@@ -27,6 +27,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.widget.Toast;  
 
 import androidx.annotation.Nullable;
 
@@ -220,6 +221,15 @@ public class MainActivity extends JitsiMeetActivity {
             this.startActivity(new Intent(this, getClass())
                 .addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT));
         }
+    }
+
+    @Override
+    protected void onInvite(HashMap<String, Object> data) { // @added-by-me
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, "invited", duration);
+        toast.show();
     }
 
     // Helper methods
