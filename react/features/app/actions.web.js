@@ -134,8 +134,7 @@ export function appNavigate(uri: ?string) {
 
             return;
         }
-        
-        fetch(`${domain}/api/check_room?room=${room}`, {
+        fetch(`${baseURL}api/check_room?room=${room}`, {
             method: "GET",    
             headers: {
                 "Content-Type": "application/json",
@@ -148,7 +147,7 @@ export function appNavigate(uri: ?string) {
                 dispatch(setConfig(config));
                 dispatch(setRoom(room));
             } else {
-                Alert.alert(
+                alert(
                     'There is no such room',
                     'create new room',
                     [
