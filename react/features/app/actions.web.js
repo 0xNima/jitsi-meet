@@ -134,10 +134,34 @@ export function appNavigate(uri: ?string) {
 
             return;
         }
-
-        dispatch(setLocationURL(locationURL));
-        dispatch(setConfig(config));
-        dispatch(setRoom(room));
+        
+        fetch(`${domain}/api/check_room?room=${room}`, {
+            method: "GET",    
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json" 
+            }
+        })
+        .then(response => {
+            if(response.status === 200){
+                dispatch(setLocationURL(locationURL));
+                dispatch(setConfig(config));
+                dispatch(setRoom(room));
+            } else {
+                Alert.alert(
+                    'There is no such room',
+                    'create new room',
+                    [
+                        {text: 'ok', onPress: () => {
+                            dispatch(updateFlags({"room": false}));
+                            dispatch(setLocationURL(locationURL));
+                            dispatch(setConfig(config));
+                            dispatch(setRoom(undefined));
+                        }},
+                    ],
+                );
+            }
+        }).catch();
     };
 }
 
