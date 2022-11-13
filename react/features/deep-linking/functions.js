@@ -24,7 +24,7 @@ export function generateDeepLinkingURL() {
     // appears to be a link with an app-specific scheme, not a Universal
     // Link.
 
-    const appScheme = interfaceConfig.APP_SCHEME || 'tr.turkgram.messenger';
+    const appScheme = interfaceConfig.APP_SCHEME || 'com.vidomeet.conference';
     const { href } = window.location;
     const regex = new RegExp(URI_PROTOCOL_PATTERN, 'gi');
 
@@ -33,7 +33,7 @@ export function generateDeepLinkingURL() {
     if (Platform.OS === 'android') {
         // https://meet.jit.si/foo -> meet.jit.si/foo
         const url = href.replace(regex, '').substr(2);
-        const pkg = interfaceConfig.ANDROID_APP_PACKAGE || 'tr.turkgram.messenger';
+        const pkg = interfaceConfig.ANDROID_APP_PACKAGE || 'com.vidomeet.conference';
 
         return `intent://${url}#Intent;scheme=${appScheme};package=${pkg};end`;
     }

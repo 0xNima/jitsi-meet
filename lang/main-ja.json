@@ -414,7 +414,7 @@
         "answer": "応答",
         "audioCallTitle": "音声通話着信",
         "decline": "拒否",
-        "productLabel": "Turkgram からの",
+        "productLabel": "Vidomeet からの",
         "videoCallTitle": "ビデオ通話着信"
     },
     "info": {
@@ -638,7 +638,7 @@
         "newDeviceAction": "使用する",
         "newDeviceAudioTitle": "新しいオーディオデバイスを検出しました",
         "newDeviceCameraTitle": "新しいカメラを検出しました",
-        "oldElectronClientDescription1": "あなたは既知のセキュリティ上の脆弱性がある、旧バージョンの Turkgram クライアントを使用しているようです。今すぐ",
+        "oldElectronClientDescription1": "あなたは既知のセキュリティ上の脆弱性がある、旧バージョンの Vidomeet クライアントを使用しているようです。今すぐ",
         "oldElectronClientDescription2": "最新ビルド",
         "oldElectronClientDescription3": "に更新してください!",
         "participantWantsToJoin": "ミーティングへの参加を希望しています",
@@ -1213,7 +1213,7 @@
         "go": "GO",
         "goSmall": "GO",
         "headerSubtitle": "安全で高品質なミーティング",
-        "headerTitle": "Turkgram",
+        "headerTitle": "Vidomeet",
         "info": "ダイヤルイン情報",
         "jitsiOnMobile": "モバイル版 Jitsi - アプリをダウンロードして、どこからでもミーティングを開始できます",
         "join": "作成 / 参加",
@@ -1221,7 +1221,7 @@
             "calendar": "カレンダーロゴ",
             "desktopPreviewThumbnail": "デスクトッププレビューサムネイル",
             "googleLogo": "Google ロゴ",
-            "logoDeepLinking": "Turkgram ロゴ",
+            "logoDeepLinking": "Vidomeet ロゴ",
             "microsoftLogo": "Microsoft ロゴ",
             "policyLogo": "ポリシーロゴ"
         },

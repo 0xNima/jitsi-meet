@@ -30,7 +30,7 @@ var config = {
 
     hosts: {
         // XMPP domain.
-        domain: 'conf.turkgram.org',
+        domain: 'vidomeet.net',
 
         // When using authentication, domain for guest users.
         // anonymousdomain: 'guest.example.com',
@@ -42,11 +42,11 @@ var config = {
         // focus: 'focus.jitsi-meet.example.com',
 
         // XMPP MUC domain. FIXME: use XEP-0030 to discover it.
-        muc: 'conference.' + subdomain + 'conf.turkgram.org',
+        muc: 'conference.' + subdomain + 'vidomeet.net',
     },
 
     // BOSH URL. FIXME: use XEP-0156 to discover it.
-    bosh: '//conf.turkgram.org/' + subdir + 'http-bind',
+    bosh: '//vidomeet.net/' + subdir + 'http-bind',
 
     // Websocket URL
     // websocket: 'wss://jitsi-meet.example.com/' + subdir + 'xmpp-websocket',

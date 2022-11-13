@@ -9,7 +9,7 @@
  */
 
 var interfaceConfig = {
-    APP_NAME: 'Turkgram',
+    APP_NAME: 'Vidomeet',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
 
@@ -111,19 +111,19 @@ var interfaceConfig = {
     /**
      * Specify custom URL for downloading android mobile app.
      */
-    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=tr.turkgram.messenger',
+    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
 
     /**
      * Specify custom URL for downloading f droid app.
      */
-    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://play.google.com/store/apps/details?id=tr.turkgram.messenger',
+    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
 
     /**
      * Specify URL for downloading ios mobile app.
      */
-    MOBILE_DOWNLOAD_LINK_IOS: 'https://play.google.com/store/apps/details?id=tr.turkgram.messenger',
+    MOBILE_DOWNLOAD_LINK_IOS: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
 
-    NATIVE_APP_NAME: 'Turkgram',
+    NATIVE_APP_NAME: 'Vidomeet',
 
     // Names of browsers which should show a warning stating the current browser
     // has a suboptimal experience. Browsers which are not listed as optimal or
@@ -132,7 +132,7 @@ var interfaceConfig = {
     OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari' ],
 
     POLICY_LOGO: null,
-    PROVIDER_NAME: 'Turkgram',
+    PROVIDER_NAME: 'Vidomeet',
 
     /**
      * If true, will display recent list
@@ -214,12 +214,12 @@ var interfaceConfig = {
     /**
      * Specify mobile app scheme for opening the app from the mobile browser.
      */
-    APP_SCHEME: 'tr.turkgram.messenger',
+    APP_SCHEME: 'com.vidomeet.conference',
 
     /**
      * Specify the Android app package name.
      */
-    ANDROID_APP_PACKAGE: 'tr.turkgram.messenger',
+    ANDROID_APP_PACKAGE: 'com.vidomeet.conference',
 
     // List of undocumented settings
     /**

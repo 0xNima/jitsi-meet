@@ -1,14 +1,14 @@
 {
-  "android_package_name": "tr.turkgram.messenger",
+  "android_package_name": "com.vidomeet.conference",
   "prefer_related_applications": true,
   "related_applications": [
     {
-      "id": "tr.turkgram.messenger",
+      "id": "com.vidomeet.conference",
       "platform": "chromeos_play"
     }
   ],
-  "short_name": "Turkgram",
-  "name": "Turkgram",
+  "short_name": "Vidomeet",
+  "name": "Vidomeet",
   "icons": [
     {
       "src": "static/pwa/icons/icon192.png",
