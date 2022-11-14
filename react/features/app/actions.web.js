@@ -147,18 +147,7 @@ export function appNavigate(uri: ?string) {
                 dispatch(setConfig(config));
                 dispatch(setRoom(room));
             } else {
-                alert(
-                    'There is no such room',
-                    'create new room',
-                    [
-                        {text: 'ok', onPress: () => {
-                            dispatch(updateFlags({"room": false}));
-                            dispatch(setLocationURL(locationURL));
-                            dispatch(setConfig(config));
-                            dispatch(setRoom(undefined));
-                        }},
-                    ],
-                );
+                alert('There is no such room');
             }
         }).catch();
     };
