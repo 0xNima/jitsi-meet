@@ -135,9 +135,22 @@ export function appNavigate(uri: ?string) {
             return;
         }
 
-        dispatch(setLocationURL(locationURL));
-        dispatch(setConfig(config));
-        dispatch(setRoom(room));
+        fetch(`${baseURL}api/check_room?room=${room}`, {
+            method: "GET",    
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json" 
+            }
+        })
+        .then(response => {
+            if(response.status === 200){
+                dispatch(setLocationURL(locationURL));
+                dispatch(setConfig(config));
+                dispatch(setRoom(room));
+            } else {
+                alert('There is no such room');
+            }
+        }).catch();
     };
 }
 

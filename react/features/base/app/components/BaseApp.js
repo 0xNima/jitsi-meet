@@ -99,8 +99,6 @@ export default class BaseApp extends Component<*, State> {
         }
 
         this.state.store.dispatch(appWillMount(this));
-	this.state.store.dispatch(updateFlags({"sdk": "vidomeet"})); //@added-by-me
-
         this._init.resolve();
     }
 

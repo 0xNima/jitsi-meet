@@ -109,19 +109,19 @@ class WelcomePage extends AbstractWelcomePage<*> {
             headerTitle: t('welcomepage.headerTitle')
         });
 
-        // navigation.addListener('focus', () => {
-        //     this._updateRoomname();
-        // });
+        navigation.addListener('focus', () => {
+            this._updateRoomname();
+        });
 
-        // navigation.addListener('blur', () => {
-        //     this._clearTimeouts();
+        navigation.addListener('blur', () => {
+            this._clearTimeouts();
 
-        //     this.setState({
-        //         generatedRoomname: '',
-        //         insecureRoomName: false,
-        //         room: ''
-        //     });
-        // });
+            this.setState({
+                generatedRoomname: '',
+                insecureRoomName: false,
+                room: ''
+            });
+        });
     }
 
     /**
@@ -322,9 +322,8 @@ class WelcomePage extends AbstractWelcomePage<*> {
                 accessibilityLabel =
                     { t('welcomepage.accessibilityLabel.join') }
                 onPress = { this._onJoin }
-                style = { styles.button } // @added-by-me
-                underlayColor = 'grey'
-                >
+                style = { styles.button }
+                underlayColor = { BaseTheme.palette.ui12 }>
                 { children }
             </TouchableHighlight>
         );
@@ -390,14 +389,7 @@ class WelcomePage extends AbstractWelcomePage<*> {
         return (
             <>
                 <JitsiStatusBar />
-                {
-                    // @added-by-me \/ \/ \/
-                }
-                <View style = { styles.joinButtonContainer } >
-                    {
-                        this._renderJoinButton()
-                    }
-                </View>
+                { this._renderRoomNameInput() }
                 <View style = { styles.welcomePage }>
                     <WelcomePageTabs
                         disabled = { this.state._fieldFocused }

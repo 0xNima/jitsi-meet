@@ -6,7 +6,7 @@ import React, { PureComponent } from 'react';
 import { BottomSheet, hideSheet } from '../../../base/dialog';
 import { bottomSheetStyles } from '../../../base/dialog/components/native/styles';
 import { connect } from '../../../base/redux';
-// import SettingsButton from '../../../base/settings/components/native/SettingsButton';
+import SettingsButton from '../../../base/settings/components/native/SettingsButton';
 import { SharedDocumentButton } from '../../../etherpad';
 import { ReactionMenu } from '../../../reactions/components';
 import { isReactionsEnabled } from '../../../reactions/functions.any';
@@ -26,7 +26,6 @@ import LinkToSalesforceButton from './LinkToSalesforceButton';
 import RaiseHandButton from './RaiseHandButton';
 import AutoPinButton from './AutoPinButton';
 import ScreenSharingButton from './ScreenSharingButton';
-import ToggleSelfViewButton from './ToggleSelfViewButton';
 
 /**
  * The type of the React {@code Component} props of {@link OverflowMenu}.
@@ -143,8 +142,7 @@ class OverflowMenu extends PureComponent<Props, State> {
                 {/* <Divider style = { styles.divider } /> */}
                 {/* <ClosedCaptionButton { ...buttonProps } /> */}
                 {/* <SharedDocumentButton { ...buttonProps } /> */}
-                <ToggleSelfViewButton { ...buttonProps } />
-                {/* <SettingsButton { ...buttonProps } /> */}
+                <SettingsButton { ...buttonProps } />
             </BottomSheet>
         );
     }

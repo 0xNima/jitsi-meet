@@ -59,25 +59,34 @@ const WelcomePageTabs = ({ disabled, onListContainerPress, onSettingsScreenFocus
     //     )
     // );
 
-    // const SettingsScreen = useCallback(() =>
-    //     (
-    //         <SettingsNavigationContainer
-    //             isInWelcomePage = { true } />
-    //     )
-    // );
+    const SettingsScreen = useCallback(() =>
+        (
+            <SettingsNavigationContainer
+                isInWelcomePage = { true } />
+        )
+    );
 
     return (
         <WelcomePage.Navigator
-            // initialRouteName = { screen.welcome.tabs.recent }
+            initialRouteName = { screen.welcome.tabs.recent }
             screenOptions = {{
-                // ...tabBarOptions,
+                ...tabBarOptions,
                 headerShown: false
             }}
             >
-            <WelcomePage.Screen name = ' '>
-                { RecentListScreen }
+            <WelcomePage.Screen
+                listeners = {{
+                    tabPress: () => {
+                        onSettingsScreenFocused(false);
+                    }
+                }}
+                name = { screen.welcome.tabs.recent }
+                options = {{
+                    ...recentListTabBarOptions,
+                    title: t('welcomepage.recentList')
+                }}>
             </WelcomePage.Screen>
-            {/* {
+            {
                 calendarEnabled
             && <WelcomePage.Screen
                 listeners = {{
@@ -92,8 +101,8 @@ const WelcomePageTabs = ({ disabled, onListContainerPress, onSettingsScreenFocus
                 }}>
                 { CalendarListScreen }
             </WelcomePage.Screen>
-            } */}
-            {/* <WelcomePage.Screen
+            }
+            <WelcomePage.Screen
                 listeners = {{
                     tabPress: () => {
                         onSettingsScreenFocused(true);
@@ -105,7 +114,7 @@ const WelcomePageTabs = ({ disabled, onListContainerPress, onSettingsScreenFocus
                     title: t('welcomepage.settings')
                 }}>
                 { SettingsScreen }
-            </WelcomePage.Screen> */}
+            </WelcomePage.Screen>
         </WelcomePage.Navigator>
     );
 };

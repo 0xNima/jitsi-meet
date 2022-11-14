@@ -26,12 +26,12 @@ export default {
         replyIcon: 'rgb(94, 109, 121)'
     },
     'Conference': {
-        inviteButtonBackground: '#FF0000',
+        inviteButtonBackground: 'rgb(0, 119, 225)',
         onVideoText: 'white'
     },
     'Dialog': {},
     'Header': {
-        background: '#FF0000',
+        background: ColorPalette.blue,
         icon: ColorPalette.white,
         statusBar: ColorPalette.blueHighlight,
         statusBarContent: ColorPalette.white,
