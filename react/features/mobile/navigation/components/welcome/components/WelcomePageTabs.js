@@ -85,8 +85,9 @@ const WelcomePageTabs = ({ disabled, onListContainerPress, onSettingsScreenFocus
                     ...recentListTabBarOptions,
                     title: t('welcomepage.recentList')
                 }}>
+                { RecentListScreen }
             </WelcomePage.Screen>
-            {
+            {/* {
                 calendarEnabled
             && <WelcomePage.Screen
                 listeners = {{
@@ -101,7 +102,7 @@ const WelcomePageTabs = ({ disabled, onListContainerPress, onSettingsScreenFocus
                 }}>
                 { CalendarListScreen }
             </WelcomePage.Screen>
-            }
+            } */}
             <WelcomePage.Screen
                 listeners = {{
                     tabPress: () => {

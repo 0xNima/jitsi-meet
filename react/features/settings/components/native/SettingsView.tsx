@@ -308,7 +308,7 @@ class SettingsView extends Component<Props, State> {
                     </FormSectionAccordion>
                     <FormSectionAccordion
                         label = 'settingsView.conferenceSection'>
-                        <TextInput
+                        {/* <TextInput
                             autoCapitalize = 'none'
                             autoCorrect = { false }
                             editable = { this.props._serverURLChangeEnabled }
@@ -323,7 +323,7 @@ class SettingsView extends Component<Props, State> {
                             style = { styles.textInputContainer }
                             textContentType = { 'URL' } // iOS only
                             theme = { textInputTheme }
-                            value = { serverURL } />
+                            value = { serverURL } /> */}
                         <Divider style = { styles.fieldSeparator } />
                         <FormRow
                             label = 'settingsView.startWithAudioMuted'>
@@ -347,7 +347,7 @@ class SettingsView extends Component<Props, State> {
                                 onChange = { this._onDisableSelfView } />
                         </FormRow>
                     </FormSectionAccordion>
-                    <FormSectionAccordion
+                    {/* <FormSectionAccordion
                         label = 'settingsView.links'>
                         <Link
                             style = { styles.sectionLink }
@@ -369,8 +369,8 @@ class SettingsView extends Component<Props, State> {
                             to = {{ screen: screen.settings.links.privacy }}>
                             { t('settingsView.privacy') }
                         </Link>
-                    </FormSectionAccordion>
-                    <FormSectionAccordion
+                    </FormSectionAccordion> */}
+                    {/* <FormSectionAccordion
                         label = 'settingsView.buildInfoSection'>
                         <FormRow
                             label = 'settingsView.version'>
@@ -378,7 +378,7 @@ class SettingsView extends Component<Props, State> {
                                 {`${AppInfo.version} build ${AppInfo.buildNumber}`}
                             </Text>
                         </FormRow>
-                    </FormSectionAccordion>
+                    </FormSectionAccordion> */}
                     <FormSectionAccordion
                         label = 'settingsView.advanced'>
                         { Platform.OS === 'android' && (
