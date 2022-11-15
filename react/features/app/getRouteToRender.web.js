@@ -21,7 +21,7 @@ import { isWelcomePageEnabled } from '../welcome/functions';
 export function _getRouteToRender(stateful) {
     const state = toState(stateful);
 
-    return _getWebConferenceRoute(state) || _getWebWelcomePageRoute(state);
+    return _getWebConferenceRoute(state);// || _getWebWelcomePageRoute(state);
 }
 
 /**
