@@ -58,7 +58,7 @@ const Whiteboard: () => JSX.Element = () => {
     const collabDetails = useSelector(getCollabDetails);
     const collabServerUrl = useSelector(getCollabServerUrl);
     const { defaultRemoteDisplayName } = useSelector((state: IState) => state['features/base/config']);
-    const localParticipantName = useSelector(getLocalParticipant)?.name || defaultRemoteDisplayName || 'Fellow Jitster';
+    const localParticipantName = useSelector(getLocalParticipant)?.name || defaultRemoteDisplayName || 'Guest';
 
     useEffect(() => {
         if (!collabAPIRef.current) {

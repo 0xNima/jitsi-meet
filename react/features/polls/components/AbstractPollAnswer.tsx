@@ -72,7 +72,7 @@ const AbstractPollAnswer = (Component: ComponentType<AbstractProps>) => (props: 
     const dispatch = useDispatch();
 
     const localParticipant = useBoundSelector(getParticipantById, localId);
-    const localName: string = localParticipant.name ? localParticipant.name : 'Fellow Jitster';
+    const localName: string = localParticipant.name ? localParticipant.name : 'Guest';
 
     const submitAnswer = useCallback(() => {
         conference.sendMessage({
