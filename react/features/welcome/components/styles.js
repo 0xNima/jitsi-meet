@@ -64,7 +64,7 @@ export default {
      */
     button: {
         backgroundColor: BaseTheme.palette.screen01Header,
-        borderColor: BaseTheme.palette.screen01Header,
+        // borderColor: BaseTheme.palette.screen01Header,
         borderRadius: 4,
         borderWidth: 1,
         height: 50,
