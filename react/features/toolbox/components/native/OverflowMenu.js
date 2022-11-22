@@ -144,7 +144,7 @@ class OverflowMenu extends PureComponent<Props, State> {
                 renderFooter = { _reactionsEnabled && !toolbarButtons.has('raisehand')
                     ? this._renderReactionMenu
                     : null }>
-                {/* <ParticipantsPaneButton { ...topButtonProps } /> */}
+                <ParticipantsPaneButton { ...topButtonProps } />
                 <AudioOnlyButton { ...buttonProps } />
                 {!_reactionsEnabled && !toolbarButtons.has('raisehand') && <RaiseHandButton { ...buttonProps } />}
                 <AutoPinButton { ...buttonProps } />
