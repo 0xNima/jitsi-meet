@@ -1,19 +1,19 @@
 
 <VirtualHost *:80>
-    ServerName vidomeet.net
-    Redirect permanent / https://vidomeet.net/
+    ServerName conf.turkgram.org
+    Redirect permanent / https://conf.turkgram.org/
 </VirtualHost>
 
 <VirtualHost *:443>
-    ServerName vidomeet.net
+    ServerName conf.turkgram.org
 
     # enable HTTP/2, if available
     Protocols h2 http/1.1
 
     SSLEngine on
     SSLProxyEngine on
-    SSLCertificateFile /etc/jitsi/meet/vidomeet.net.crt
-    SSLCertificateKeyFile /etc/jitsi/meet/vidomeet.net.key
+    SSLCertificateFile /etc/jitsi/meet/conf.turkgram.org.crt
+    SSLCertificateKeyFile /etc/jitsi/meet/conf.turkgram.org.key
 
     Header always set Strict-Transport-Security "max-age=63072000"
 
@@ -28,7 +28,7 @@
 
     ErrorDocument 404 /static/404.html
 
-    Alias "/config.js" "/etc/jitsi/meet/vidomeet.net-config.js"
+    Alias "/config.js" "/etc/jitsi/meet/conf.turkgram.org-config.js"
     <Location /config.js>
         Require all granted
     </Location>

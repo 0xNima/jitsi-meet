@@ -68,7 +68,7 @@ if [ -f /etc/nginx/sites-enabled/$DOMAIN.conf ] ; then
 
         cp /usr/share/jitsi-meet-turnserver/coturn-certbot-deploy.sh $TURN_HOOK
         chmod u+x $TURN_HOOK
-        sed -i "s/vidomeet.net/$DOMAIN/g" $TURN_HOOK
+        sed -i "s/conf.turkgram.org/$DOMAIN/g" $TURN_HOOK
 
         $CERTBOT certonly --noninteractive \
         --webroot --webroot-path /usr/share/jitsi-meet \

@@ -1,8 +1,8 @@
 {
   "packageId": "org.jitsi.meet",
   "host": "meet.jit.si",
-  "name": "Vidomeet",
-  "launcherName": "Vidomeet",
+  "name": "TeleTurk",
+  "launcherName": "TeleTurk",
   "display": "standalone",
   "themeColor": "#17A0DB",
   "navigationColor": "#000000",

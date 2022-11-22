@@ -1,14 +1,14 @@
 {
-  "android_package_name": "org.vidogram.messenger",
+  "android_package_name": "tr.turkgram.messenger",
   "prefer_related_applications": true,
   "related_applications": [
     {
-      "id": "org.vidogram.messenger",
+      "id": "tr.turkgram.messenger",
       "platform": "chromeos_play"
     }
   ],
-  "short_name": "Vidomeet",
-  "name": "Vidomeet",
+  "short_name": "TeleTurk",
+  "name": "TeleTurk",
   "icons": [
     {
       "src": "static/pwa/icons/icon192.png",

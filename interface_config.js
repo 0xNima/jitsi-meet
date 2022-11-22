@@ -9,7 +9,7 @@
  */
 
 var interfaceConfig = {
-    APP_NAME: 'Vidomeet',
+    APP_NAME: 'TeleTurk',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
 
@@ -102,7 +102,7 @@ var interfaceConfig = {
     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
 
     /**
-     * Whether the mobile app Vidomeet is to be promoted to participants
+     * Whether the mobile app TeleTurk is to be promoted to participants
      * attempting to join a conference in a mobile Web browser. If
      * {@code undefined}, defaults to {@code true}.
      *
@@ -113,19 +113,19 @@ var interfaceConfig = {
     /**
      * Specify custom URL for downloading android mobile app.
      */
-    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
+    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=tr.turkgram.messenger',
 
     /**
      * Specify custom URL for downloading f droid app.
      */
-    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
+    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://play.google.com/store/apps/details?id=tr.turkgram.messenger',
 
     /**
      * Specify URL for downloading ios mobile app.
      */
     MOBILE_DOWNLOAD_LINK_IOS: '',
 
-    NATIVE_APP_NAME: 'Vidomeet',
+    NATIVE_APP_NAME: 'TeleTurk',
 
     // Names of browsers which should show a warning stating the current browser
     // has a suboptimal experience. Browsers which are not listed as optimal or
@@ -216,12 +216,12 @@ var interfaceConfig = {
     /**
      * Specify mobile app scheme for opening the app from the mobile browser.
      */
-    APP_SCHEME: 'org.vidogram.messenger',
+    APP_SCHEME: 'tr.turkgram.messenger',
 
     /**
      * Specify the Android app package name.
      */
-    ANDROID_APP_PACKAGE: 'org.vidogram.messenger',
+    ANDROID_APP_PACKAGE: 'tr.turkgram.messenger',
 
     // List of undocumented settings
     /**

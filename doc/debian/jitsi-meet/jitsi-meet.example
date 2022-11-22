@@ -17,7 +17,7 @@ upstream jvb1 {
 server {
     listen 80;
     listen [::]:80;
-    server_name vidomeet.net;
+    server_name conf.turkgram.org;
 
     location ^~ /.well-known/acme-challenge/ {
         default_type "text/plain";
@@ -33,7 +33,7 @@ server {
 server {
     listen 443 ssl;
     listen [::]:443 ssl;
-    server_name vidomeet.net;
+    server_name conf.turkgram.org;
 
     # Mozilla Guideline v5.4, nginx 1.17.7, OpenSSL 1.1.1d, intermediate configuration
     ssl_protocols TLSv1.2 TLSv1.3;
@@ -47,8 +47,8 @@ server {
     add_header Strict-Transport-Security "max-age=63072000" always;
     set $prefix "";
 
-    ssl_certificate /etc/jitsi/meet/vidomeet.net.crt;
-    ssl_certificate_key /etc/jitsi/meet/vidomeet.net.key;
+    ssl_certificate /etc/jitsi/meet/conf.turkgram.org.crt;
+    ssl_certificate_key /etc/jitsi/meet/conf.turkgram.org.key;
 
     root /usr/share/jitsi-meet;
 
@@ -66,7 +66,7 @@ server {
     gzip_min_length 512;
 
     location = /config.js {
-        alias /etc/jitsi/meet/vidomeet.net-config.js;
+        alias /etc/jitsi/meet/conf.turkgram.org-config.js;
     }
 
     location = /external_api.js {
@@ -135,7 +135,7 @@ server {
         set $subdomain "$1.";
         set $subdir "$1/";
 
-        alias /etc/jitsi/meet/vidomeet.net-config.js;
+        alias /etc/jitsi/meet/conf.turkgram.org-config.js;
     }
 
     # BOSH for subdomains

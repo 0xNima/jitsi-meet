@@ -195,7 +195,7 @@ export class AbstractWelcomePage<P: Props> extends Component<P, *> {
             }
             return result;
         })(); // this.state.generatedRoomname; // @added-by-me
-        
+
         if (room) {
             this.setState({ joining: true });
 

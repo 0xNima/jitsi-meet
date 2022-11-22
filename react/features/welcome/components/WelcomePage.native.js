@@ -316,7 +316,8 @@ class WelcomePage extends AbstractWelcomePage<*> {
                     { t('welcomepage.accessibilityLabel.join') }
                 onPress = { this._onJoin }
                 style = { styles.button }
-                underlayColor = { BaseTheme.palette.ui12 }>
+                underlayColor = { 'gray' /*@added-by-me*/ }
+                >
                 { children }
             </TouchableHighlight>
         );
