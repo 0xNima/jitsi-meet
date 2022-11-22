@@ -38,32 +38,33 @@ const WelcomePageTabs = ({ disabled, onListContainerPress }: Props) => {
             onListContainerPress = { onListContainerPress } />)
     );
 
-    const calendarEnabled = useSelector(isCalendarEnabled);
+    // const calendarEnabled = useSelector(isCalendarEnabled);
 
-    const CalendarListScreen = useCallback(() =>
-        (<CalendarList
-            disabled = { disabled } />)
-    );
+    // const CalendarListScreen = useCallback(() =>
+    //     (<CalendarList
+    //         disabled = { disabled } />)
+    // );
 
     return (
         <WelcomePage.Navigator
             screenOptions = {{
                 headerShown: false,
-                ...tabBarOptions
+                // ...tabBarOptions
             }}>
             <WelcomePage.Screen
-                name = { screen.welcome.tabs.recent }
-                options = { recentListTabBarOptions }>
+                name = ' '
+                // options = { recentListTabBarOptions }
+                >
                 { RecentListScreen }
             </WelcomePage.Screen>
-            {
+            {/* {
                 calendarEnabled
             && <WelcomePage.Screen
                 name = { screen.welcome.tabs.calendar }
                 options = { calendarListTabBarOptions }>
                 { CalendarListScreen }
             </WelcomePage.Screen>
-            }
+            } */}
         </WelcomePage.Navigator>
     );
 };

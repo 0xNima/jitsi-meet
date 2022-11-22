@@ -1,14 +1,14 @@
 {
-  "android_package_name": "org.jitsi.meet",
+  "android_package_name": "org.vidogram.messenger",
   "prefer_related_applications": true,
   "related_applications": [
     {
-      "id": "org.jitsi.meet",
+      "id": "org.vidogram.messenger",
       "platform": "chromeos_play"
     }
   ],
-  "short_name": "Jitsi Meet",
-  "name": "Jitsi Meet",
+  "short_name": "Vidomeet",
+  "name": "Vidomeet",
   "icons": [
     {
       "src": "static/pwa/icons/icon192.png",

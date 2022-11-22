@@ -98,6 +98,8 @@ export class AbstractWelcomePage<P: Props> extends Component<P, *> {
         this._onRoomChange = this._onRoomChange.bind(this);
         this._renderInsecureRoomNameWarning = this._renderInsecureRoomNameWarning.bind(this);
         this._updateRoomname = this._updateRoomname.bind(this);
+        this.ROOM_NAME_LENGTH = 8;
+        this.CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     }
 
     /**
@@ -179,14 +181,21 @@ export class AbstractWelcomePage<P: Props> extends Component<P, *> {
      * @returns {void}
      */
     _onJoin() {
-        const room = this.state.room || this.state.generatedRoomname;
+        // const room = this.state.room || this.state.generatedRoomname;
 
-        sendAnalytics(
-            createWelcomePageEvent('clicked', 'joinButton', {
-                isGenerated: !this.state.room,
-                room
-            }));
-
+        // sendAnalytics(
+        //     createWelcomePageEvent('clicked', 'joinButton', {
+        //         isGenerated: !this.state.room,
+        //         room
+        //     }));
+        const room = this.state.room || (() => {
+            let result = '';
+            for ( let i = 0; i < this.ROOM_NAME_LENGTH; i++ ) {
+                result += this.CHARS.charAt(Math.floor(Math.random() * this.CHARS.length));
+            }
+            return result;
+        })(); // this.state.generatedRoomname; // @added-by-me
+        
         if (room) {
             this.setState({ joining: true });
 

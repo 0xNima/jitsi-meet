@@ -1,3 +1,17 @@
-<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 18.3598C14.627 18.3598 15.0001 17.9867 15.0001 17.5265V13.3333H17.5001C17.9603 13.3333 18.3334 12.9602 18.3334 12.5V2.49996C18.3334 2.03972 17.9603 1.66663 17.5001 1.66663H2.50008C2.03984 1.66663 1.66675 2.03972 1.66675 2.49996V12.5C1.66675 12.9602 2.03984 13.3333 2.50008 13.3333H9.62979L13.5238 18.0566C13.6821 18.2486 13.9179 18.3598 14.1667 18.3598ZM3.33341 3.33329H16.6667V11.6666H13.3334V15.2057L10.4158 11.6666H3.33341V3.33329Z" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#ffffff;}
+</style>
+<g id="bounding_box">
+	<rect class="st0" width="24" height="24"/>
+</g>
+<g id="design">
+	<g>
+		<path class="st1" d="M22,12c0,4.41-3.59,8-8,8H3c-0.55,0-1-0.45-1-1v-7c0-4.41,3.59-8,8-8h4C18.41,4,22,7.59,22,12z"/>
+	</g>
+</g>
 </svg>

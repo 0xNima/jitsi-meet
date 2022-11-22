@@ -82,6 +82,10 @@ const SCREEN_SHARE_TOGGLED = 'SCREEN_SHARE_TOGGLED';
  */
 const PARTICIPANTS_INFO_RETRIEVED = 'PARTICIPANTS_INFO_RETRIEVED';
 
+
+const INVITE = 'INVITE'; //@added-by-me
+
+
 const { ExternalAPI } = NativeModules;
 const eventEmitter = new NativeEventEmitter(ExternalAPI);
 
@@ -225,6 +229,9 @@ MiddlewareRegistry.register(store => next => action => {
             /* data */ {
                 muted: action.muted
             });
+        break;
+    case INVITE: // @added-by-me
+        sendEvent(store, INVITE, action.data);
         break;
     }
 

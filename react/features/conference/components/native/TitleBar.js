@@ -84,9 +84,9 @@ const TitleBar = (props: Props) => (<>
         <View style = { styles.titleBarButtonContainer }>
             <AudioDeviceToggleButton styles = { styles.inviteButton } />
         </View>
-        <View style = { styles.titleBarButtonContainer }>
+        {/* <View style = { styles.titleBarButtonContainer }>
             <InviteButton styles = { styles.inviteButton } />
-        </View>
+        </View> */}
     </View>}
 </>);
 

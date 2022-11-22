@@ -67,7 +67,8 @@ export default {
         borderColor: BaseTheme.palette.screen01Header,
         borderRadius: 4,
         borderWidth: 1,
-        height: 30,
+        height: 50,
+        width: '95%',
         justifyContent: 'center',
         paddingHorizontal: 20
     },
@@ -277,5 +278,16 @@ export default {
      */
     screenContainer: {
         flex: 1
+    },
+
+    /**
+     * @added-by-me
+     */
+     joinButtonContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
+        height: 200,
+        marginBottom: 10
     }
 };

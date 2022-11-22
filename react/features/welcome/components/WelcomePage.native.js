@@ -123,19 +123,19 @@ class WelcomePage extends AbstractWelcomePage<*> {
                 <VideoSwitch />
         });
 
-        navigation.addListener('focus', () => {
-            this._updateRoomname();
-        });
+        // navigation.addListener('focus', () => {
+        //     this._updateRoomname();
+        // });
 
-        navigation.addListener('blur', () => {
-            this._clearTimeouts();
+        // navigation.addListener('blur', () => {
+        //     this._clearTimeouts();
 
-            this.setState({
-                generatedRoomname: '',
-                insecureRoomName: false,
-                room: ''
-            });
-        });
+        //     this.setState({
+        //         generatedRoomname: '',
+        //         insecureRoomName: false,
+        //         room: ''
+        //     });
+        // });
     }
 
     /**
@@ -335,39 +335,46 @@ class WelcomePage extends AbstractWelcomePage<*> {
             <>
                 <JitsiStatusBar />
                 <View style = { styles.welcomePage }>
-                    <SafeAreaView style = { styles.roomContainer } >
-                        <View style = { styles.joinControls } >
-                            <Text style = { styles.enterRoomText }>
-                                { t('welcomepage.roomname') }
-                            </Text>
-                            {/* // $FlowExpectedError*/}
-                            <TextInput
-                                accessibilityLabel = { t(roomnameAccLabel) }
-                                autoCapitalize = { 'none' }
-                                autoComplete = { 'off' }
-                                autoCorrect = { false }
-                                autoFocus = { false }
-                                onBlur = { this._onFieldBlur }
-                                onChangeText = { this._onRoomChange }
-                                onFocus = { this._onFieldFocus }
-                                onSubmitEditing = { this._onJoin }
-                                placeholder = { this.state.roomPlaceholder }
-                                placeholderTextColor = { PLACEHOLDER_TEXT_COLOR }
-                                returnKeyType = { 'go' }
-                                spellCheck = { false }
-                                style = { styles.textInput }
-                                underlineColorAndroid = 'transparent'
-                                value = { this.state.room } />
-                            {
+                        {/* <SafeAreaView style = { styles.roomContainer } >
+                            <View style = { styles.joinControls } >
+                                <Text style = { styles.enterRoomText }>
+                                    { t('welcomepage.roomname') }
+                                </Text>
+                                { 
+                                    // $FlowExpectedError
+                                }
+                                <TextInput
+                                    accessibilityLabel = { t(roomnameAccLabel) }
+                                    autoCapitalize = { 'none' }
+                                    autoComplete = { 'off' }
+                                    autoCorrect = { false }
+                                    autoFocus = { false }
+                                    onBlur = { this._onFieldBlur }
+                                    onChangeText = { this._onRoomChange }
+                                    onFocus = { this._onFieldFocus }
+                                    onSubmitEditing = { this._onJoin }
+                                    placeholder = { this.state.roomPlaceholder }
+                                    placeholderTextColor = { PLACEHOLDER_TEXT_COLOR }
+                                    returnKeyType = { 'go' }
+                                    spellCheck = { false }
+                                    style = { styles.textInput }
+                                    underlineColorAndroid = 'transparent'
+                                    value = { this.state.room } />
+                                {
 
-                                // $FlowExpectedError
-                                this._renderInsecureRoomNameWarning()
-                            }
-                            {
-                                this._renderHintBox()
-                            }
-                        </View>
-                    </SafeAreaView>
+                                    // $FlowExpectedError
+                                    this._renderInsecureRoomNameWarning()
+                                }
+                                {
+                                    this._renderHintBox()
+                                }
+                            </View>
+                        </SafeAreaView> */}
+                    <View style = { styles.joinButtonContainer } >
+                        {
+                            this._renderJoinButton()
+                        }
+                    </View>
                     {/* // $FlowExpectedError*/}
                     <WelcomePageTabs
                         disabled = { this.state._fieldFocused }

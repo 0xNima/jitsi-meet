@@ -1,7 +1,7 @@
 // @flow
 
 import React, { PureComponent } from 'react';
-import { Divider } from 'react-native-paper';
+// import { Divider } from 'react-native-paper';
 
 import { ColorSchemeRegistry } from '../../../base/color-scheme';
 import { BottomSheet, hideDialog, isDialogOpen } from '../../../base/dialog';
@@ -18,15 +18,17 @@ import { SharedVideoButton } from '../../../shared-video/components';
 import SpeakerStatsButton from '../../../speaker-stats/components/native/SpeakerStatsButton';
 import { ClosedCaptionButton } from '../../../subtitles';
 import { TileViewButton } from '../../../video-layout';
-import styles from '../../../video-menu/components/native/styles';
+// import styles from '../../../video-menu/components/native/styles';
 import { getMovableButtons } from '../../functions.native';
 import HelpButton from '../HelpButton';
 
 import AudioOnlyButton from './AudioOnlyButton';
 import LinkToSalesforceButton from './LinkToSalesforceButton';
 import RaiseHandButton from './RaiseHandButton';
+import AutoPinButton from './AutoPinButton';
 import ScreenSharingButton from './ScreenSharingButton';
 import ToggleCameraButton from './ToggleCameraButton';
+import ToggleSelfViewButton from './ToggleSelfViewButton';
 
 /**
  * The type of the React {@code Component} props of {@link OverflowMenu}.
@@ -145,21 +147,22 @@ class OverflowMenu extends PureComponent<Props, State> {
                 <ParticipantsPaneButton { ...topButtonProps } />
                 <AudioOnlyButton { ...buttonProps } />
                 {!_reactionsEnabled && !toolbarButtons.has('raisehand') && <RaiseHandButton { ...buttonProps } />}
-                <Divider style = { styles.divider } />
+                <AutoPinButton { ...buttonProps } />
+                {/* <Divider style = { styles.divider } /> */}
                 <SecurityDialogButton { ...buttonProps } />
-                <RecordButton { ...buttonProps } />
-                <LiveStreamButton { ...buttonProps } />
-                <LinkToSalesforceButton { ...buttonProps } />
-                <Divider style = { styles.divider } />
+                {/* <RecordButton { ...buttonProps } /> */}
+                {/* <LiveStreamButton { ...buttonProps } /> */}
+                {/* <LinkToSalesforceButton { ...buttonProps } /> */}
+                {/* <Divider style = { styles.divider } /> */}
                 <SharedVideoButton { ...buttonProps } />
                 <ScreenSharingButton { ...buttonProps } />
                 <SpeakerStatsButton { ...buttonProps } />
                 {!toolbarButtons.has('togglecamera') && <ToggleCameraButton { ...buttonProps } />}
                 {!toolbarButtons.has('tileview') && <TileViewButton { ...buttonProps } />}
-                <Divider style = { styles.divider } />
-                <ClosedCaptionButton { ...buttonProps } />
-                <SharedDocumentButton { ...buttonProps } />
-                <HelpButton { ...buttonProps } />
+                {/* <Divider style = { styles.divider } /> */}
+                {/* <ClosedCaptionButton { ...buttonProps } /> */}
+                {/* <SharedDocumentButton { ...buttonProps } /> */}
+                {/* <HelpButton { ...buttonProps } /> */}
             </BottomSheet>
         );
     }

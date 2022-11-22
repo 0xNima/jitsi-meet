@@ -9,7 +9,7 @@
  */
 
 var interfaceConfig = {
-    APP_NAME: 'Jitsi Meet',
+    APP_NAME: 'Vidomeet',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
 
@@ -28,7 +28,7 @@ var interfaceConfig = {
 
     DEFAULT_BACKGROUND: '#040404',
     DEFAULT_LOGO_URL: 'images/watermark.svg',
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: '',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
 
@@ -87,7 +87,7 @@ var interfaceConfig = {
      */
     HIDE_INVITE_MORE_HEADER: false,
 
-    JITSI_WATERMARK_LINK: 'https://jitsi.org',
+    JITSI_WATERMARK_LINK: '',
 
     LANG_DETECTION: true, // Allow i18n to detect the system language
     LIVE_STREAMING_HELP_LINK: 'https://jitsi.org/live', // Documentation reference for the live streaming feature.
@@ -102,7 +102,7 @@ var interfaceConfig = {
     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
 
     /**
-     * Whether the mobile app Jitsi Meet is to be promoted to participants
+     * Whether the mobile app Vidomeet is to be promoted to participants
      * attempting to join a conference in a mobile Web browser. If
      * {@code undefined}, defaults to {@code true}.
      *
@@ -113,19 +113,19 @@ var interfaceConfig = {
     /**
      * Specify custom URL for downloading android mobile app.
      */
-    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=org.jitsi.meet',
+    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
 
     /**
      * Specify custom URL for downloading f droid app.
      */
-    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://f-droid.org/en/packages/org.jitsi.meet/',
+    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://play.google.com/store/apps/details?id=com.vidomeet.conference',
 
     /**
      * Specify URL for downloading ios mobile app.
      */
-    MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',
+    MOBILE_DOWNLOAD_LINK_IOS: '',
 
-    NATIVE_APP_NAME: 'Jitsi Meet',
+    NATIVE_APP_NAME: 'Vidomeet',
 
     // Names of browsers which should show a warning stating the current browser
     // has a suboptimal experience. Browsers which are not listed as optimal or
@@ -162,7 +162,7 @@ var interfaceConfig = {
     SHOW_CHROME_EXTENSION_BANNER: false,
 
     SHOW_DEEP_LINKING_IMAGE: false,
-    SHOW_JITSI_WATERMARK: true,
+    SHOW_JITSI_WATERMARK: false,
     SHOW_POWERED_BY: false,
     SHOW_PROMOTIONAL_CLOSE_PAGE: false,
 
@@ -170,7 +170,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://community.jitsi.org/',
+    SUPPORT_URL: '',
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
@@ -216,12 +216,12 @@ var interfaceConfig = {
     /**
      * Specify mobile app scheme for opening the app from the mobile browser.
      */
-    // APP_SCHEME: 'org.jitsi.meet',
+    APP_SCHEME: 'org.vidogram.messenger',
 
     /**
      * Specify the Android app package name.
      */
-    // ANDROID_APP_PACKAGE: 'org.jitsi.meet',
+    ANDROID_APP_PACKAGE: 'org.vidogram.messenger',
 
     // List of undocumented settings
     /**
