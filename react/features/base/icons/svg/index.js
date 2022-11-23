@@ -42,7 +42,7 @@ export { default as IconCopy } from './copy.svg';
 export { default as IconCrown } from './crown.svg';
 export { default as IconDeviceBluetooth } from './bluetooth.svg';
 export { default as IconDeviceEarpiece } from './phone-talk.svg';
-export { default as IconDeviceHeadphone } from './speaker.svg';
+export { default as IconDeviceHeadphone } from './headset.svg';
 export { default as IconDeviceSpeaker } from './volume.svg';
 export { default as IconDeviceDocument } from './document.svg';
 export { default as IconDominantSpeaker } from './dominant-speaker.svg';
