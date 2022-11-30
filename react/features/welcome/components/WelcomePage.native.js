@@ -312,7 +312,7 @@ class WelcomePage extends AbstractWelcomePage<*> {
         } else {
             children = (
                 <Text style = { styles.buttonText }>
-                    { this.props.t('welcomepage.join') }
+                    { this.props.t('Create Meeting') }
                 </Text>
             );
         }
@@ -320,7 +320,7 @@ class WelcomePage extends AbstractWelcomePage<*> {
         return (
             <TouchableHighlight
                 accessibilityLabel =
-                    { t('welcomepage.accessibilityLabel.join') }
+                    { t('Create Meeting') }
                 onPress = { this._onJoin }
                 style = { styles.button }
                 underlayColor = { BaseTheme.palette.ui12 }>
