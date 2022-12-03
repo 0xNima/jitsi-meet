@@ -45,7 +45,6 @@ const IconButton: React.FC<IconButtonProps> = ({
         rippleColor = tapColor;
     }
 
-
     return (
         <TouchableRipple
             accessibilityLabel = { accessibilityLabel }
@@ -55,7 +54,8 @@ const IconButton: React.FC<IconButtonProps> = ({
             rippleColor = { rippleColor }
             style = { [
                 iconButtonContainerStyles,
-                style
+                style,
+                {backgroundColor: 'rgb(227,79,86)'} // @added-by-me
             ] }>
             <Icon
                 color = { color }
