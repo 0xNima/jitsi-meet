@@ -111,7 +111,7 @@ function Toolbox(props: Props) {
                 <OverflowMenuButton
                     styles = { buttonStylesBorderless }
                     toggledStyles = { toggledButtonStyles } />
-                { _endConferenceSupported
+                { (0 && _endConferenceSupported)
                     ? <HangupMenuButton
                         styles = { hangupMenuButtonStyles }
                         toggledStyles = { toggledButtonStyles } />
