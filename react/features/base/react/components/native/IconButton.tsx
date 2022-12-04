@@ -55,7 +55,7 @@ const IconButton: React.FC<IconButtonProps> = ({
             style = { [
                 iconButtonContainerStyles,
                 style,
-                {backgroundColor: 'rgb(227,79,86)'} // @added-by-me
+                // {backgroundColor: 'rgb(227,79,86)'} // @added-by-me
             ] }>
             <Icon
                 color = { color }
