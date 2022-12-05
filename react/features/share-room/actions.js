@@ -2,7 +2,7 @@
 
 import { getInviteURL } from '../base/connection';
 
-import { BEGIN_SHARE_ROOM, END_SHARE_ROOM, INVITE } from './actionTypes';
+import { BEGIN_SHARE_ROOM, END_SHARE_ROOM } from './actionTypes';
 
 /**
  * Begins the UI procedure to share the URL for the current conference/room.
@@ -43,12 +43,4 @@ export function endShareRoom(roomURL: string, shared: boolean): Object {
         roomURL,
         shared
     };
-}
-
-
-export function inviteEvent(data) { // @added-by-me
-    return {
-        type: INVITE,
-        data
-    }
 }

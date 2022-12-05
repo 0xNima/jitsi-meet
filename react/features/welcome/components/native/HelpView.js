@@ -11,7 +11,7 @@ import { screen } from '../../../mobile/navigation/routes';
 import styles from '../styles';
 
 
-const DEFAULT_HELP_CENTRE_URL = 'https://web-cdn.jitsi.net/faq/meet-faq.html';
+const DEFAULT_HELP_CENTRE_URL = '';
 
 type Props = {
 

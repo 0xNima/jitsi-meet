@@ -170,7 +170,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: '',
+    SUPPORT_URL: 'https://t.me/vidogram',
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
@@ -216,12 +216,12 @@ var interfaceConfig = {
     /**
      * Specify mobile app scheme for opening the app from the mobile browser.
      */
-    APP_SCHEME: 'org.vidogram.messenger',
+    APP_SCHEME: 'com.vidomeet.conference',
 
     /**
      * Specify the Android app package name.
      */
-    ANDROID_APP_PACKAGE: 'org.vidogram.messenger',
+    ANDROID_APP_PACKAGE: 'com.vidomeet.conference',
 
     // List of undocumented settings
     /**

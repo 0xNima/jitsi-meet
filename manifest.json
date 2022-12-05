@@ -1,9 +1,9 @@
 {
-  "android_package_name": "org.vidogram.messenger",
+  "android_package_name": "com.vidomeet.conference",
   "prefer_related_applications": true,
   "related_applications": [
     {
-      "id": "org.vidogram.messenger",
+      "id": "com.vidomeet.conference",
       "platform": "chromeos_play"
     }
   ],

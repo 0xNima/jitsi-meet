@@ -245,10 +245,6 @@ public class JitsiMeetActivity extends AppCompatActivity
         finish();
     }
 
-    protected void onInvite(HashMap<String, Object> data) {
-        JitsiMeetLogger.i("invite: " + data);
-    }
-
     // Activity lifecycle methods
     //
 
@@ -330,9 +326,6 @@ public class JitsiMeetActivity extends AppCompatActivity
                     break;
                 case READY_TO_CLOSE:
                     onReadyToClose();
-                    break;
-                case INVITE:
-                    onInvite(event.getData());
                     break;
             }
         }

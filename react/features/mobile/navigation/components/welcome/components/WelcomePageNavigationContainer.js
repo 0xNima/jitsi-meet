@@ -58,13 +58,13 @@ const WelcomePageNavigationContainer = () => {
                     ...termsAndPrivacyScreenOptions,
                     title: t('privacyView.header')
                 }} />
-            <DrawerStack.Screen
+            {/* <DrawerStack.Screen
                 component = { HelpView }
                 name = { screen.welcome.help }
                 options = {{
                     ...helpScreenOptions,
                     title: t('helpView.header')
-                }} />
+                }} /> */}
         </DrawerStack.Navigator>
     );
 };

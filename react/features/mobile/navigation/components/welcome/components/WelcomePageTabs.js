@@ -49,12 +49,11 @@ const WelcomePageTabs = ({ disabled, onListContainerPress }: Props) => {
         <WelcomePage.Navigator
             screenOptions = {{
                 headerShown: false,
-                // ...tabBarOptions
+                ...tabBarOptions
             }}>
             <WelcomePage.Screen
-                name = ' '
-                // options = { recentListTabBarOptions }
-                >
+                name = { screen.welcome.tabs.recent }
+                options = { recentListTabBarOptions }>
                 { RecentListScreen }
             </WelcomePage.Screen>
             {/* {

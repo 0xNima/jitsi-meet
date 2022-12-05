@@ -28,7 +28,6 @@ import RaiseHandButton from './RaiseHandButton';
 import AutoPinButton from './AutoPinButton';
 import ScreenSharingButton from './ScreenSharingButton';
 import ToggleCameraButton from './ToggleCameraButton';
-import ToggleSelfViewButton from './ToggleSelfViewButton';
 
 /**
  * The type of the React {@code Component} props of {@link OverflowMenu}.
@@ -163,7 +162,6 @@ class OverflowMenu extends PureComponent<Props, State> {
                 {/* <ClosedCaptionButton { ...buttonProps } /> */}
                 {/* <SharedDocumentButton { ...buttonProps } /> */}
                 {/* <HelpButton { ...buttonProps } /> */}
-                <ToggleSelfViewButton { ...buttonProps } />
             </BottomSheet>
         );
     }

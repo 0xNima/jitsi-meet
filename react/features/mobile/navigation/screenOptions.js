@@ -87,7 +87,6 @@ export const drawerContentOptions = {
  */
 export const welcomeScreenOptions = {
     ...drawerScreenOptions,
-    headerShown: false, // @added-by-me
     drawerIcon: ({ focused }) => (
         <Icon
             color = { focused ? BaseTheme.palette.screen01Header : BaseTheme.palette.icon02 }

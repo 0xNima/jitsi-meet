@@ -21,6 +21,3 @@ export const BEGIN_SHARE_ROOM = 'BEGIN_SHARE_ROOM';
  * }
  */
 export const END_SHARE_ROOM = 'END_SHARE_ROOM';
-
-
-export const INVITE = 'INVITE'; // @added-by-me

@@ -21,7 +21,7 @@ type Props = {
 /**
  * The URL at which the privacy policy is available to the user.
  */
-const PRIVACY_URL = '';
+const PRIVACY_URL = `https://vidomeet.com/privacy?v=${Date.now()}`;;
 
 const PrivacyView = ({ navigation }: Props) => {
 

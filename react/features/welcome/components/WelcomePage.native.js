@@ -123,19 +123,19 @@ class WelcomePage extends AbstractWelcomePage<*> {
                 <VideoSwitch />
         });
 
-        // navigation.addListener('focus', () => {
-        //     this._updateRoomname();
-        // });
+        navigation.addListener('focus', () => {
+            this._updateRoomname();
+        });
 
-        // navigation.addListener('blur', () => {
-        //     this._clearTimeouts();
+        navigation.addListener('blur', () => {
+            this._clearTimeouts();
 
-        //     this.setState({
-        //         generatedRoomname: '',
-        //         insecureRoomName: false,
-        //         room: ''
-        //     });
-        // });
+            this.setState({
+                generatedRoomname: '',
+                insecureRoomName: false,
+                room: ''
+            });
+        });
     }
 
     /**
@@ -316,8 +316,7 @@ class WelcomePage extends AbstractWelcomePage<*> {
                     { t('Create Meeting') }
                 onPress = { this._onJoin }
                 style = { styles.button }
-                // underlayColor = { BaseTheme.palette.ui12 }>
-                underlayColor = { 'grey' /* @added-by-me */ }>
+                underlayColor = { 'gray' /*BaseTheme.palette.ui12*/ }>
                 { children }
             </TouchableHighlight>
         );
@@ -336,7 +335,7 @@ class WelcomePage extends AbstractWelcomePage<*> {
             <>
                 <JitsiStatusBar />
                 <View style = { styles.welcomePage }>
-                        {/* <SafeAreaView style = { styles.roomContainer } >
+                        <SafeAreaView style = { styles.roomContainer } >
                             <View style = { styles.joinControls } >
                                 <Text style = { styles.enterRoomText }>
                                     { t('welcomepage.roomname') }
@@ -370,7 +369,7 @@ class WelcomePage extends AbstractWelcomePage<*> {
                                     this._renderHintBox()
                                 }
                             </View>
-                        </SafeAreaView> */}
+                        </SafeAreaView>
                     <View style = { styles.joinButtonContainer } >
                         {
                             this._renderJoinButton()

@@ -21,7 +21,7 @@ type Props = {
 /**
  * The URL at which the terms (of service/use) are available to the user.
  */
-const TERMS_URL = '';
+const TERMS_URL = `https://vidomeet.com/terms?v=${Date.now()}`;
 
 const TermsView = ({ navigation }: Props) => {
 

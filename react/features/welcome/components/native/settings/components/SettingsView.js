@@ -236,7 +236,7 @@ class SettingsView extends AbstractSettingsView<Props, State> {
                         accordion = { false }
                         expandable = { false }
                         label = 'settingsView.conferenceSection'>
-                        <TextInput
+                        {/* <TextInput
                             autoCapitalize = 'none'
                             autoCorrect = { false }
                             editable = { this.props._serverURLChangeEnabled }
@@ -251,7 +251,7 @@ class SettingsView extends AbstractSettingsView<Props, State> {
                             textContentType = { 'URL' } // iOS only
                             theme = { textInputTheme }
                             value = { serverURL } />
-                        <Divider style = { styles.fieldSeparator } />
+                        <Divider style = { styles.fieldSeparator } /> */}
                         <FormRow
                             label = 'settingsView.startWithAudioMuted'>
                             <Switch
@@ -275,7 +275,7 @@ class SettingsView extends AbstractSettingsView<Props, State> {
                                 value = { startWithVideoMuted } />
                         </FormRow>
                     </FormSectionAccordion>
-                    <FormSectionAccordion
+                    {/* <FormSectionAccordion
                         accordion = { false }
                         expandable = { false }
                         label = 'settingsView.buildInfoSection'>
@@ -285,7 +285,7 @@ class SettingsView extends AbstractSettingsView<Props, State> {
                                 {`${AppInfo.version} build ${AppInfo.buildNumber}`}
                             </Text>
                         </FormRow>
-                    </FormSectionAccordion>
+                    </FormSectionAccordion> */}
                     <FormSectionAccordion
                         accordion = { true }
                         expandable = { true }
