@@ -116,4 +116,9 @@
  */
 - (void)readyToClose:(NSDictionary *)data;
 
+/**
+* Called when the user press the invite button.
+ */
+- (void)invite:(NSDictionary *)data;
+
 @end
