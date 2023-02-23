@@ -197,10 +197,11 @@ export default {
 
     roomNameWrapper: {
         flexDirection: 'row',
-        marginRight: 10,
-        marginLeft: 8,
+        // marginRight: 10,
+        // marginLeft: 8,
         flexShrink: 1,
-        flexGrow: 1
+        flexGrow: 1,
+        justifyContent: 'center',
     },
 
     /**
